@@ -194,6 +194,7 @@ footer p {
     font-weight: bold;
 }
 
+/* Responsive styling */
 @media (max-width: 768px) {
     header {
         justify-content: space-between;
@@ -204,7 +205,7 @@ footer p {
     }
 
     nav {
-        display: none; /* Hide the navigation links */
+        display: none; /* Hide the navigation links by default */
         flex-direction: column;
         position: absolute;
         top: 100%;
@@ -214,7 +215,7 @@ footer p {
     }
 
     nav.active {
-        display: flex;
+        display: flex; /* Show the navigation links when active */
     }
 
     nav a {
