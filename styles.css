@@ -74,12 +74,12 @@ header img {
     height: 60px;
     margin-right: 1em;
 }
-
+@media (min-width: 768px) {
 header nav {
     display: flex;
     align-items: center;
     margin-left: auto;
-}
+}}
 
 nav a {
     color: white;
@@ -100,12 +100,13 @@ nav a:hover,
 }
 
 /* Hamburger menu styling */
+@media (min-width: 768px) {
 .menu-toggle {
     display: none;
     font-size: 2em;
     cursor: pointer;
     margin-left: auto;
-}
+}}
 
 /* Main content styling */
 main {
