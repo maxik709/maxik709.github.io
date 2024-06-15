@@ -7,7 +7,7 @@
 
 /* Body styling */
 body {
-    background: url(https://www.cnet.com/a/img/resize/0ef788248caeea67f4c80ade63a6e95f49bf3a2a/hub/2015/12/17/b5fed3aa-a35c-4dc9-ad71-fc17118ebcb1/lol.jpg?auto=webp&width=1920) no-repeat center center fixed;
+    background: src(lol.webp) no-repeat center center fixed;
     background-size: cover;
     font-family: "Source Sans Pro", sans-serif;
     color: white; /* Default text color for body */
