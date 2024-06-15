@@ -41,7 +41,7 @@ header img {
     height: 60px;
     margin-right: 1em;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
 header nav {
     display: flex;
     align-items: center;
