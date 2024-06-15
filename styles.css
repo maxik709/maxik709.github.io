@@ -1,0 +1,231 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@media (max-width: 768px) {
+    header {
+        justify-content: space-between;
+    }
+
+    header h1 {
+        font-size: 1.5em; /* Decrease header font size */
+    }
+
+    nav {
+        display: none; /* Hide the navigation links by default */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    nav.active {
+        display: flex; /* Show the navigation links when active */
+    }
+
+    nav a {
+        font-size: 1em; /* Decrease navigation link font size */
+        padding: 1em; /* Increase padding for better touch interaction */
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+/* Body styling */
+body {
+    background: url(lol.webp) no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Source Sans Pro", sans-serif;
+    color: white; /* Default text color for body */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Header styling */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header img {
+    height: 60px;
+    margin-right: 1em;
+}
+@media (min-width: 768px) {
+header nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    font-weight: bold;
+    font-size: 1.5em;
+    display: inline-block;
+}
+
+a.decoration {
+    text-decoration: underline;
+}
+
+nav a:hover,
+.selected {
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+/* Hamburger menu styling */
+@media (min-width: 768px) {
+.menu-toggle {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+    margin-left: auto;
+}}
+
+/* Main content styling */
+main {
+    margin-top: 6em;
+    padding: 2em;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+/* Vertical container styling */
+.container-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.image {
+    width: 100%;
+    border-radius: 0.5em;
+    overflow: hidden; /* Ensures the image stays within its container */
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.5em; /* Ensures the image respects the border radius */
+}
+
+.text {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 2em;
+    margin: 0.5em;
+    border-radius: 0.5em;
+    font-size: 1.5em; /* Increased font size */
+}
+
+/* Form styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 0.5em;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+form label {
+    display: block;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 0.3em;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 0.3em;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Footer styling */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+#to-top {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Responsive styling */
