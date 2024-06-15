@@ -181,3 +181,13 @@ footer p {
     cursor: pointer;
     font-weight: bold;
 }
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em; /* Decrease header font size */
+    }
+
+    nav a {
+        font-size: 1em; /* Decrease navigation link font size */
+        padding: 0.5em 0.8em; /* Adjust padding for smaller links */
+    }
+}
