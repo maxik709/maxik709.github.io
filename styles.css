@@ -41,12 +41,12 @@ header img {
     height: 60px;
     margin-right: 1em;
 }
-
+@media (max-width: 768px) {
 header nav {
     display: flex;
     align-items: center;
     margin-left: auto;
-}
+}}
 
 nav a {
     color: white;
