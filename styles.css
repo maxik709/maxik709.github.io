@@ -11,12 +11,13 @@ body {
     background-size: cover;
     font-family: "Source Sans Pro", sans-serif;
     color: white; /* Default text color for body */
-    content: "Background Image";
 }
-a{
+
+a {
     color: white;
     text-decoration: none;
 }
+
 /* Header styling */
 header {
     background-color: rgba(0, 0, 0, 0.8);
@@ -55,11 +56,22 @@ nav a {
     font-size: 1.5em;
     display: inline-block;
 }
-a.decoration{
+
+a.decoration {
     text-decoration: underline;
 }
-nav a:hover, .selected {
+
+nav a:hover,
+.selected {
     background-color: rgba(128, 128, 128, 0.3);
+}
+
+/* Hamburger menu styling */
+.menu-toggle {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+    margin-left: auto;
 }
 
 /* Main content styling */
@@ -181,45 +193,38 @@ footer p {
     cursor: pointer;
     font-weight: bold;
 }
+
 @media (max-width: 768px) {
-  header {
-    justify-content: space-between;
-  }
+    header {
+        justify-content: space-between;
+    }
 
-  header h1 {
-    font-size: 1.5em; /* Decrease header font size */
-  }
+    header h1 {
+        font-size: 1.5em; /* Decrease header font size */
+    }
 
-  nav {
-    display: none; /* Hide the navigation links */
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-  }
+    nav {
+        display: none; /* Hide the navigation links */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
 
-  nav a {
-    font-size: 1em; /* Decrease navigation link font size */
-    padding: 1em; /* Increase padding for better touch interaction */
-    width: 100%;
-    text-align: center;
-  }
+    nav.active {
+        display: flex;
+    }
 
-  .menu-toggle {
-    display: block;
-    cursor: pointer;
-  }
-}
+    nav a {
+        font-size: 1em; /* Decrease navigation link font size */
+        padding: 1em; /* Increase padding for better touch interaction */
+        width: 100%;
+        text-align: center;
+    }
 
-/* Hamburger menu styling */
-.menu-toggle {
-  display: none;
-  font-size: 2em;
-  cursor: pointer;
-  margin-left: auto;
-}
-nav.active {
-  display: flex;
+    .menu-toggle {
+        display: block;
+    }
 }
