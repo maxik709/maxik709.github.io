@@ -10,11 +10,11 @@
     }
 
     header h1 {
-        font-size: 1.5em; /* Decrease header font size */
+        font-size: 1.5em;
     }
 
     nav {
-        display: none; /* Hide the navigation links by default */
+        display: none;
         flex-direction: column;
         position: absolute;
         top: 100%;
@@ -24,12 +24,12 @@
     }
 
     nav.active {
-        display: flex; /* Show the navigation links when active */
+        display: flex;
     }
 
     nav a {
-        font-size: 1em; /* Decrease navigation link font size */
-        padding: 1em; /* Increase padding for better touch interaction */
+        font-size: 1em; 
+        padding: 1em; 
         width: 100%;
         text-align: center;
     }
@@ -38,12 +38,12 @@
         display: block;
     }
 }
-/* Body styling */
+
 body {
     background: url(lol.webp) no-repeat center center fixed;
     background-size: cover;
     font-family: "Source Sans Pro", sans-serif;
-    color: white; /* Default text color for body */
+    color: white; 
 }
 
 a {
@@ -51,7 +51,7 @@ a {
     text-decoration: none;
 }
 
-/* Header styling */
+
 header {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
@@ -99,7 +99,7 @@ nav a:hover,
     background-color: rgba(128, 128, 128, 0.3);
 }
 
-/* Hamburger menu styling */
+
 @media (min-width: 768px) {
 .menu-toggle {
     display: none;
@@ -108,7 +108,7 @@ nav a:hover,
     margin-left: auto;
 }}
 
-/* Main content styling */
+
 main {
     margin-top: 6em;
     padding: 2em;
@@ -124,7 +124,7 @@ section h2 {
     margin-bottom: 1em;
 }
 
-/* Vertical container styling */
+
 .container-vertical {
     display: flex;
     flex-direction: column;
@@ -137,14 +137,14 @@ section h2 {
 .image {
     width: 100%;
     border-radius: 0.5em;
-    overflow: hidden; /* Ensures the image stays within its container */
+    overflow: hidden; 
 }
 
 .image img {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 0.5em; /* Ensures the image respects the border radius */
+    border-radius: 0.5em; 
 }
 
 .text {
@@ -154,7 +154,7 @@ section h2 {
     padding: 2em;
     margin: 0.5em;
     border-radius: 0.5em;
-    font-size: 1.5em; /* Increased font size */
+    font-size: 1.5em;
 }
 
 /* Form styling */
@@ -206,7 +206,7 @@ form button:hover {
     background-color: #45a049;
 }
 
-/* Footer styling */
+
 footer {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
