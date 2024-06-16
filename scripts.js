@@ -9,6 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
   
     menuToggle.addEventListener('click', () => {
         nav.classList.toggle('active');
-        menuToggle.textContent = nav.classList.contains('active') ? '▲' : '▼'; // Toggle arrow direction
+        menuToggle.textContent = nav.classList.contains('active') ? '▲' : '▼'; 
     });
 });
